@@ -1,12 +1,17 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    argJoe = len(sys.argv)
-    if argJoe == 1:
-        print("{} arguments.".format(argJoe - 1))
-    elif argJoe == 2:
-        print("{} argument:".format(argJoe - 1))
-    else:
-        print("{} arguments:".format(argJoe - 1))
-        for bat in range(1, argJoe):
-            print("{}: {}".format(bat, sys.argv[bat]))
+    argjoe = sys.argv
+    sizebee = len(argjoe) - 1
+
+    if sizebee > 1:
+        print("{} arguments:".format(sizebee))
+        for bat in range(1, sizebee + 1):
+            print("{}: {}".format(bat, argjoe[bat]))
+
+        elif sizebee = 0:
+            print("{} arguments.".format(sizebee))
+
+        else:
+            print("{} argument:".format(sizebee))
+            print("{}: {}".format(sizebee, argjoe[1]))
