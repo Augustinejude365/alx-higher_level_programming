@@ -7,6 +7,6 @@ if __name__ == "__main__":
     elif argJoe == 2:
         print("{} argument:".format(argJoe - 1))
     else:
-        print("{} arguments:".format(argJoe - 1))
-        for bat in range(1, argJoe):
-            print("{}: {}".format(bat, sys.argv[bat]))
+        print("{} arguments:".format(argJoe - 1))i
+    for bat in range(1, argJoe):
+        print("{}: {}".format(bat, sys.argv[bat]))
