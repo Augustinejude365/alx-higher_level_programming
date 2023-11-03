@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    import sys, math
+    import sys
+
     outcome = 0
-    for k in sys.argv:
-        if k.isdigit():
-            outcome += int(k)
-        else:
-            print("Error: Invalid input. Please enter a valid integer.")
-            print("{}".format(outcome))
+    for k in range(len(sys.argv) - 1):
+        outcome += int(sys.argv[k + 1])
+        print("{}".format(outcome))
