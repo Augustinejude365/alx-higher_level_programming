@@ -6,4 +6,4 @@ for j in range(0, 10):
         elif j == 8 and k == 9:
             print("{}{}".format(j,k))
         else:
-            print"{}{}".format(j,k), end=", ")
+            print("{}{}".format(j,k), end=", ")
