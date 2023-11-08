@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-
 if __name__ == "__main__":
-    import sys
+    """Prints additional arguments"""
+    import sys, math
 
     outcome = 0
     for k in range(len(sys.argv) - 1):
