@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    """Prints additional arguments"""
-    import sys, math
-
-    outcome = 0
-    for k in range(len(sys.argv) - 1):
-        outcome += int(sys.argv[k + 1])
-        print("{}".format(outcome))
+    from sys import argv
+    kount = 0
+    for g in range(1, len(argv)):
+        kount += int(argv[g])
+        print("{}".format(kount))
