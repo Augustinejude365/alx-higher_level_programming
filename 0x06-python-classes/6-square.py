@@ -12,7 +12,7 @@ class Square:
         position (int, int): The position of the new square."""
         self.size = size
         self.position = position
-        
+
     @property
     def size(self):
         """Get/set the current size of the square."""
@@ -25,7 +25,7 @@ class Square:
         elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    
+
     @property
     def position(self):
         """Get/set the current position of the square."""
