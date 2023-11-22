@@ -10,7 +10,7 @@ class Node:
         next_node (Node): The next node of the new Node."""
         self.data = data
         self.next_node = next_node
-    
+
     @property
     def data(self):
         """Get/set the data of the Node."""
@@ -21,7 +21,7 @@ class Node:
         if not isinstance(value, int):
             raise TypeError("data must be an integer")
         self.__data = value
-    
+
     @property
     def next_node(self):
         """Get/set the next_node of the Node."""
