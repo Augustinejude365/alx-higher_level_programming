@@ -90,7 +90,7 @@ class Base:
                 list_dicts = Base.from_json_string(jsonfile.read())
                 return [cls.create(**d) for d in list_dicts]
         except IOError:
-                return []
+            return []
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
@@ -132,14 +132,13 @@ class Base:
                     list_dicts = [dict([k, int(v)]
                                   for k, v in d.items())
                                   for d in list_dicts]
-                    return [cls.create(**d)
-                            for d in list_dicts]
+                    return [cls.create(**d) for d in list_dicts]
         except IOError:
-            return
+            return []
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        """Draw Rectangles and Squares using the turtle m
+        """Draw Rectangles and Squares using the turtle module
         Args:
         list_rectangles (list): A list of Rectangle objects to
         draw.list_squares (list): A list of Square objects to draw.
